@@ -8,7 +8,7 @@ import { NgForm, FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Template driven forms';
+  title = 'Setting value in Template-driven Form';
  
   @ViewChild('contactForm', {static: false}) contactForm: NgForm;
  
