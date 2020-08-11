@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     this.contact = {
       firstname: "Giorgio",
       lastname: "Aurispa",
-      email: "giorgio.giorgi@auur.it",
+      email: "giorgio.aurispa@outlook.it",
       gender: "male",
       isMarried: true,
       country: "1",
