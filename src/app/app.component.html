@@ -6,7 +6,7 @@
 
 	<p>
 		<label for="firstname">First Name </label>
-		<input type="text" id="firstname" name="firstname" required minlength="10" #firstname="ngModel"
+		<input type="text" id="firstname" name="firstname" required minlength="2" #firstname="ngModel"
       [(ngModel)]="contact.firstname">
   </p>
 		<div *ngIf="!firstname.valid && (firstname.dirty || firstname.touched)" class="error">
@@ -20,7 +20,7 @@
 
 		<p>
 			<label for="lastname">Last Name </label>
-			<input type="text" id="lastname" name="lastname" required maxlength="15" #lastname="ngModel"
+			<input type="text" id="lastname" name="lastname" required maxlength="25" #lastname="ngModel"
             pattern="^[a-zA-Z]+$"  [(ngModel)]="contact.lastname">
   </p>
 			<div *ngIf="!lastname.valid && (lastname.dirty || lastname.touched)" class="error">
