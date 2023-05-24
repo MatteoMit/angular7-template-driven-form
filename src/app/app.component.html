@@ -76,7 +76,10 @@
 
   <p>{{contactForm.valid}} </p>
 
-  <p>{{contact|json}} </p>
+  <p>-- Form Value: </p>
+  <pre><code>{{ contactForm.value | json }}</code></pre>
+  <p>-- Model Value: </p>
+  <pre><code>{{contact|json}} </code></pre>
  
 
 </form>
