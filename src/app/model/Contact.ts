@@ -1,9 +1,9 @@
 export class Contact {
   firstname: string;
   lastname: string;
+  email: string;
   gender: string;
   isToc: boolean;
-  email: string;
 
   constructor(
     firstname: string,
