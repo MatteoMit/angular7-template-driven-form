@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.contact = {
-      firstname: "",
-      lastname: "",
+      firstname: "Matteo",
+      lastname: "mitrano",
       gender: "male",
       isToc: true,
       email: ""
