@@ -10,9 +10,13 @@
       id="firstname"
       name="firstname"
       required
-      minlength="2"
+      minlength="3"
       #firstname="ngModel"
       [(ngModel)]="contact.firstname"
+      [ngClass]= "{
+        'is-invalid': firstname.invalid && firstname.dirty,
+        'is-valid': firstname.valid && firstname.dirty
+        }"
     />
   </p>
   <div
@@ -75,7 +79,7 @@
   </div>
 
   <p>
-    <label for="gender">Geneder </label>
+    <label for="gender">Gender </label>
     <input
       type="radio"
       value="male"
