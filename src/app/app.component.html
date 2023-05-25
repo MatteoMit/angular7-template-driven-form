@@ -10,13 +10,13 @@
       id="firstname"
       name="firstname"
       required
-      minlength="3"
+      minlength="2"
       #firstname="ngModel"
       [(ngModel)]="contact.firstname"
-      [ngClass]= "{
+      [ngClass]="{
         'is-invalid': firstname.invalid && firstname.dirty,
         'is-valid': firstname.valid && firstname.dirty
-        }"
+      }"
     />
   </p>
   <div
